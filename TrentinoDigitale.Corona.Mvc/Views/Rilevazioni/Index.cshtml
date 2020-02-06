@@ -1,0 +1,47 @@
+﻿@model TrentinoDigitale.Corona.Mvc.Models.Rilevazioni.IndexModel
+@{
+    ViewBag.Title = "Index";
+}
+
+@using (Html.BeginForm("Index", "Rilevazioni", FormMethod.Post))
+{
+    <ul>
+        <li>
+            Persona @Html.TextBoxFor(e => e.UserName)
+            @Html.ValidationMessageFor(e => e.UserName, "Errore user", new { @class = "text-danger" })
+        </li>
+        <li>
+            Da @Html.TextBoxFor(e => e.FromDate)
+        </li>
+        <li>
+            Da @Html.TextBoxFor(e => e.ToDate)
+        </li>
+        <li>
+            @using (Html.BeginForm("CompilaCodice", "Rilevazioni", FormMethod.Post))
+            {
+                @Html.DropDownListFor(e => e.SelectedCode, Model.AllCodes, new { onchange = "this.form.submit()" })
+            }
+        </li>
+        <li>
+            @Html.CheckBoxFor(e => e.IsMonday) Lun
+        </li>
+        <li>
+            @Html.CheckBoxFor(e => e.IsTuesday) Mar
+        </li>
+        <li>
+            @Html.CheckBoxFor(e => e.IsWednesday) Mer
+        </li>
+        <li>
+            @Html.CheckBoxFor(e => e.IsThurstday) Gio
+        </li>
+        <li>
+            @Html.CheckBoxFor(e => e.IsFriday) Fri
+        </li>
+    </ul>   
+
+    <button type="submit" class="bt btn-primary btn-block">
+        Invia (@Model.SelectedCodeDescription)
+    </button>
+}
+
+

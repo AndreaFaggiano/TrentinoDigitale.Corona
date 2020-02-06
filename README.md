@@ -1,0 +1,1 @@
+# TrentinoDigitale.Corona

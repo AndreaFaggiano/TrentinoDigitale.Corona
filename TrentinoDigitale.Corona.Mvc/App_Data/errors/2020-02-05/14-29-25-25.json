@@ -1,0 +1,8 @@
+{
+  "controller": "Home",
+  "action": "Index",
+  "params": {},
+  "user": "Anonymous",
+  "exceptionMessage": "L'utente con nome '' non è stato trovato!",
+  "stacktrace": "System.InvalidProgramException: L'utente con nome '' non è stato trovato!\r\n   at TrentinoDigitale.Corona.Mvc.Controllers.HomeController.Index() in C:\\Users\\Mauro\\source\\repos\\TrentinoDigitale.Corona\\TrentinoDigitale.Corona.Mvc\\Controllers\\HomeController.cs:line 24\r\n   at lambda_method(Closure , ControllerBase , Object[] )\r\n   at System.Web.Mvc.ActionMethodDispatcher.Execute(ControllerBase controller, Object[] parameters)\r\n   at System.Web.Mvc.ReflectedActionDescriptor.Execute(ControllerContext controllerContext, IDictionary`2 parameters)\r\n   at System.Web.Mvc.ControllerActionInvoker.InvokeActionMethod(ControllerContext controllerContext, ActionDescriptor actionDescriptor, IDictionary`2 parameters)\r\n   at System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c.<BeginInvokeSynchronousActionMethod>b__9_0(IAsyncResult asyncResult, ActionInvocation innerInvokeState)\r\n   at System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResult`2.CallEndDelegate(IAsyncResult asyncResult)\r\n   at System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResultBase`1.End()\r\n   at System.Web.Mvc.Async.AsyncControllerActionInvoker.EndInvokeActionMethod(IAsyncResult asyncResult)\r\n   at System.Web.Mvc.Async.AsyncControllerActionInvoker.AsyncInvocationWithFilters.<>c__DisplayClass11_0.<InvokeActionMethodFilterAsynchronouslyRecursive>b__0()\r\n   at System.Web.Mvc.Async.AsyncControllerActionInvoker.AsyncInvocationWithFilters.<>c__DisplayClass11_2.<InvokeActionMethodFilterAsynchronouslyRecursive>b__2()"
+}
